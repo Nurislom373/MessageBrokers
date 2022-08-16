@@ -10,6 +10,8 @@
         <option value="$PROJECT_DIR$/RabbitMQ/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ/Consumer/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ/Producer/pom.xml" />
+        <option value="$PROJECT_DIR$/RedisMQ/RedisMQ/pom.xml" />
+        <option value="$PROJECT_DIR$/RedisMQ/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,16 +2,18 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="RabbitMQ" />
-        <module name="Apache-Kafka" />
         <module name="MessageQueue" />
-        <module name="ActiveMQ" />
         <module name="Consumer" />
         <module name="Producer" />
+        <module name="RedisMQ" />
+        <module name="Apache-Kafka" />
+        <module name="ActiveMQ" />
       </profile>
     </annotationProcessing>
   </component>
@@ -21,6 +23,7 @@
       <module name="Apache-Kafka" options="-parameters" />
       <module name="Consumer" options="-parameters" />
       <module name="Producer" options="-parameters" />
+      <module name="RedisMQ" options="-parameters" />
     </option>
   </component>
 </project>
