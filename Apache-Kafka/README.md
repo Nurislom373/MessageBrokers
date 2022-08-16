@@ -23,3 +23,23 @@ The latest version of this artifact can be found here.
 Our example application will be a Spring Boot application.
 
 This article assumes that the server is started using the default configuration and that no server ports are changed.
+
+# 3. Apache Kafka Core Concepts
+
+We will discuss following Apache Kafka core concepts:
+
+1. Kafka Cluster
+2. Kafka Broker
+3. Kafka Producer
+4. Kafka Consumer
+5. Kafka Topic
+6. Kafka Partitions
+7. Kafka Offsets
+8. Kafka Consumer Group
+
+## 3.1 Kafka Cluster
+
+Since Kafka is a distributed system, it acts as a cluster. A Kafka cluster consists of a set of brokers. A cluster has a minimum of 3 brokers.
+
+The following diagram shows Kafka cluster with three Kafka brockers:
+
