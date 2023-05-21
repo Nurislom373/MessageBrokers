@@ -13,6 +13,7 @@
         <module name="Producer" />
         <module name="RedisMQ" />
         <module name="Apache-Kafka" />
+        <module name="RabbitMQ-RPC" />
         <module name="ActiveMQ" />
       </profile>
     </annotationProcessing>
@@ -21,9 +22,10 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ActiveMQ" options="-parameters" />
       <module name="Apache-Kafka" options="-parameters" />
-      <module name="Consumer" options="-parameters" />
-      <module name="Producer" options="-parameters" />
-      <module name="RedisMQ" options="-parameters" />
+      <module name="Consumer" options="" />
+      <module name="Producer" options="" />
+      <module name="RabbitMQ-RPC" options="-parameters" />
+      <module name="RedisMQ" options="" />
     </option>
   </component>
 </project>
