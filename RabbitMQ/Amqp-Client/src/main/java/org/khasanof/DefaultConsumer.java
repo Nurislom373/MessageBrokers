@@ -41,8 +41,8 @@ public class DefaultConsumer {
     }
 
     private void tryConsumeChannel(Channel channel) throws IOException {
-//        channel.queueDeclare(QUEUE_NAME, false, false, false, Collections.emptyMap());
-//        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+        channel.queueDeclare(QUEUE_NAME, false, false, false, Collections.emptyMap());
+        System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
 
         DeliverCallback deliverCallback = (consumerTag, message) -> {
             String text = new String(message.getBody(), StandardCharsets.UTF_8);
