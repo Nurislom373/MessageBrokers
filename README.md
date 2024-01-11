@@ -1,4 +1,4 @@
-## Most popular message brokers integration with spring boot 2.7.2 version
+## Most popular message brokers integration with Java
 
 1. Apache ActiveMQ
 2. Apache Kafka
