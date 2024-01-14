@@ -119,3 +119,32 @@ qo'shishimiz mumkin. Bog'lovchi kalit yani binding key `black`. Routing key `bla
 yetkaziladi `Q1` va `Q2`.
 
 ![img_3](etc/images/img_3.png)
+
+# 5. Topic Exchange
+
+topic exchange orqali yuborilgan xabarlarni routing_keyi ixtiyoriy so'zlaridan iborat bo'lishi mumkin emas. Nuqtalar bilan ajratilgan
+so'zlar ro'yxat bo'lishi kerak. So'zlar har qanday bo'lishi mumkin. Misol uchun `stock.usd.nyse`, `nyse.vmw`, `quick.orange.rabbit`
+
+Bog'lash kaliti yani binding key ham bir xil shaklda bo'lishi kerak. Topic ortidagi logika direct exchange dan yuborilgan
+xabarga o'xshaydi. Maxsus routing key barcha queuelarga yetkaziladi mos keladigan binding key bilan bog'langan. Biroq
+2ta narsa bor kalitlarni ulash uchun maxsus holatlar.
+
+- `*` (yulduzcha) aynan bitta so'z o'rnini
+- `#` (xesh) nol yoki undan ortiq so'z o'rinni bosishi mumkin.
+
+![img_4](etc/images/img_4.png)
+
+Biz uchta binding yaratdik. Q1 `*.orange.*` va Q2 da `*.*.rabbit` va `lazy.#`
+
+- Q1 - barcha apelsin hayvonlarga qiziqadi.
+- Q2 - quyonlar haqida hamma narsani va dangasa haqida hamma narsani eshitishni xohlaydi.
+
+ushbu routing key `quick.orange.rabbit` bilan yuborilgan xabar ikkala queuega ham yetkaziladi. `lazy.orange.elephant`
+ham ikkala queuega boradi. Boshqa tarafdan `quick.orange.fox` faqat Q1 ga yuboriladi va `lazy.brown.fox` faqat Q2 ga 
+yuboriladi. `lazy.pink.rabbit` faqat bir marta Q2 ga yuboriladi garchi u 2ta bog'lanishga yani binding_key ga mos kelsa
+ham. `quick.brown.fox` hech qanday bog'lovchiga mos kelmaydi, shuning uchun u o'chirib tashlanadi. 
+
+Agar biz topic shartnomasini buzsak va bitta yoki 3ta kop sozli xabar yuborsak nima sodir bo'ladi. Masalan `orange` yoki
+`quick.orange.new.rabbit` Xo'sh, bu xabarlar hech qanday bog'lanishga mos kelmaydi va yo'qoladi. 
+
+Boshqa tomondan `lazy.orange.new.rabbit` garchi u to'rta bo'lsa ham, oxirgi bog'lovchiga mos keladi va Q2 yetkaziladi. 
