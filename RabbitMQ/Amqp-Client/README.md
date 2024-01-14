@@ -148,3 +148,19 @@ Agar biz topic shartnomasini buzsak va bitta yoki 3ta kop sozli xabar yuborsak n
 `quick.orange.new.rabbit` Xo'sh, bu xabarlar hech qanday bog'lanishga mos kelmaydi va yo'qoladi. 
 
 Boshqa tomondan `lazy.orange.new.rabbit` garchi u to'rta bo'lsa ham, oxirgi bog'lovchiga mos keladi va Q2 yetkaziladi. 
+
+# 6. Remote Procedure Call (RPC)
+
+Umuman olganda RabbitMQ da RPC oson. Client so'rov yuboradi xabarini yuboradi va server javob xabari bilan javob beradi.
+
+## Message Properties
+
+- `replyTo` - Odatda qayta qo'ng'iroq queue ni nomlash uchun foydalaniladi.
+- `correlationId` - RPC Javoblarni requestlar bilan bog'lash uchun ishlatiladi.
+
+## Correlation Id
+
+Correlation Id - serverdan qaytgan javob qaysi request teshli ekanligini aniqlashimiz uchun kerak. Biz uni unique
+qilib belgilashimiz kerak har bir request uchun. 
+
+![img_5](etc/images/img_5.png)
