@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/RedisMQ/RedisMQ/pom.xml" />
         <option value="$PROJECT_DIR$/RedisMQ/pom.xml" />
         <option value="$PROJECT_DIR$/RabbitMQ-RPC/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-AMQP/pom.xml" />
       </list>
     </option>
     <option name="workspaceImportForciblyTurnedOn" value="true" />
