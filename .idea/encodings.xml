@@ -16,6 +16,8 @@
     <file url="file://$PROJECT_DIR$/RedisMQ/RedisMQ/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/RedisMQ/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/RedisMQ/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-AMQP/Spring-AMQP-Consumer/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Spring-AMQP/Spring-AMQP-Producer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Spring-AMQP/src/main/java" charset="UTF-8" />
   </component>
 </project>

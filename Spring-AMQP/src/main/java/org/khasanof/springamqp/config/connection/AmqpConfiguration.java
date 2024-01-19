@@ -1,18 +1,16 @@
-package org.khasanof.springamqp.amqptemplate;
+package org.khasanof.springamqp.config.connection;
 
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.retry.backoff.ExponentialBackOffPolicy;
 import org.springframework.retry.support.RetryTemplate;
 
 /**
  * @author Nurislom
- * @see org.khasanof.springamqp.amqptemplate
+ * @see org.khasanof.springamqp
  * @since 1/18/2024 10:52 PM
  */
-@Configuration
 public class AmqpConfiguration {
 
     @Bean
@@ -25,6 +23,7 @@ public class AmqpConfiguration {
         backOffPolicy.setMaxInterval(10000);
         retryTemplate.setBackOffPolicy(backOffPolicy);
         rabbitTemplate.setRetryTemplate(retryTemplate);
+        rabbitTemplate.setMandatory(true); //
         return rabbitTemplate;
     }
 

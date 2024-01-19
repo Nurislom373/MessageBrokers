@@ -15,6 +15,8 @@
         <module name="Apache-Kafka" />
         <module name="RabbitMQ-RPC" />
         <module name="ActiveMQ" />
+        <module name="Spring-AMQP-Producer" />
+        <module name="Spring-AMQP-Consumer" />
         <module name="Spring-AMQP" />
       </profile>
     </annotationProcessing>
@@ -28,6 +30,8 @@
       <module name="RabbitMQ-RPC" options="-parameters" />
       <module name="RedisMQ" options="-parameters" />
       <module name="Spring-AMQP" options="-parameters" />
+      <module name="Spring-AMQP-Consumer" options="-parameters" />
+      <module name="Spring-AMQP-Producer" options="-parameters" />
     </option>
   </component>
 </project>

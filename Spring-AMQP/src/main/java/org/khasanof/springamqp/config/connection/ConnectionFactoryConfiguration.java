@@ -1,4 +1,4 @@
-package org.khasanof.springamqp.connection;
+package org.khasanof.springamqp.config.connection;
 
 import com.rabbitmq.client.ConnectionFactory;
 import com.rabbitmq.client.ShutdownSignalException;
@@ -13,7 +13,6 @@ import java.util.List;
  * @see org.khasanof.springamqp.connection
  * @since 1/18/2024 10:27 PM
  */
-@Configuration
 public class ConnectionFactoryConfiguration {
 
     @Bean
