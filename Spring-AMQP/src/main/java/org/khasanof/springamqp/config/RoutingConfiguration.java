@@ -18,6 +18,11 @@ public class RoutingConfiguration {
     }
 
     @Bean
+    public Queue replyQueue() {
+        return new Queue(RabbitConstants.DEFAULT_REPLY_QUEUE_NAME);
+    }
+
+    @Bean
     public Exchange exchange() {
         return new DirectExchange(RabbitConstants.DEFAULT_EXCHANGE_NAME);
     }
@@ -30,4 +35,11 @@ public class RoutingConfiguration {
                 .noargs();
     }
 
+    @Bean
+    public Binding replyBinding() {
+        return BindingBuilder.bind(replyQueue())
+                .to(exchange())
+                .with(RabbitConstants.DEFAULT_REPLY_ROUTING_KEY)
+                .noargs();
+    }
 }

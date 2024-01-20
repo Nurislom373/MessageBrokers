@@ -17,7 +17,7 @@ import org.springframework.context.annotation.Configuration;
  * @see org.khasanof.config
  * @since 1/20/2024 1:13 AM
  */
-@Configuration
+//@Configuration
 public class MessageListenerContainerConfiguration {
 
     @Bean
