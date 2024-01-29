@@ -17,7 +17,7 @@ import org.springframework.stereotype.Component;
 public class SimpleProducer {
 
     private final RabbitTemplate rabbitTemplate;
-    private final PublishMessageStrategy publishMessageStrategy = new RequestReplyPublishMessageStrategy();
+    private final PublishMessageStrategy publishMessageStrategy = new DefaultPublishMessageStrategy();
 
     public SimpleProducer(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;

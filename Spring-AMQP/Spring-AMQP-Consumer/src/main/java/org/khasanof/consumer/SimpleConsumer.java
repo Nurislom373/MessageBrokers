@@ -15,7 +15,7 @@ import org.springframework.stereotype.Component;
  * @since 1/20/2024 12:39 AM
  */
 @Slf4j
-@Component
+//@Component
 public class SimpleConsumer {
 
     private final RabbitTemplate rabbitTemplate;

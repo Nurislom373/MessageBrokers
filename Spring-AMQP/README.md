@@ -171,6 +171,27 @@ public AbstractJackson2MessageConverter messageConverter() {
 }
 ```
 
+## Annotation-Driven Listener Endpoints
+
+Xabarlarni asinxron qabul qilishning eng oson yo'li annotated listener endpoint foydalanishdir. Xulosa qilib aytganda,
+bu sizga boshqariladigan bean methodini Rabbit Listeneri sifatida ko'rsatishga imkon beradi. Quyidagi misol `@RabbitListener`
+annotationdan qanday foydalanishni ko'rsatadi.
+
+```java
+@Component
+public class MyService {
+
+    @RabbitListener(queues = "myQueue")
+    public void processOrder(String data) {
+        ...
+    }
+
+}
+```
+
+Oldingi misol g'oyasi shundan iboratki, har safar queueda xabar mavjud bo'lganda `processOrder` method chaqiriladi.
+Har bir annotatsiya qo'yilgan method sahna ortida message listener containerni yaratadi. `RabbitListenerContainerFactory`
+
 ## Reference
 
 - [AMQP Concepts](https://www.rabbitmq.com/tutorials/amqp-concepts.html)
