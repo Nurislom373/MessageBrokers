@@ -8,12 +8,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Amqp-Client" />
-        <module name="MessageQueue" />
         <module name="Consumer" />
         <module name="Producer" />
         <module name="RedisMQ" />
         <module name="Apache-Kafka" />
         <module name="RabbitMQ-RPC" />
+        <module name="Apache-Kafka-Client" />
         <module name="ActiveMQ" />
         <module name="Spring-AMQP-Producer" />
         <module name="Spring-AMQP-Consumer" />

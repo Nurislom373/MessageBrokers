@@ -3,6 +3,8 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/ActiveMQ/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ActiveMQ/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Apache-Kafka-Client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/Apache-Kafka-Client/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Apache-Kafka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/Apache-Kafka/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/RabbitMQ-RPC/src/main/java" charset="UTF-8" />
