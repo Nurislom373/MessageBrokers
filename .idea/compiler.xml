@@ -7,17 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringKafkaCore" />
+        <module name="RabbitMQ-RPC" />
+        <module name="Apache-Kafka-Client" />
+        <module name="ActiveMQ" />
+        <module name="Spring-AMQP" />
+        <module name="SpringKafkaProducer" />
         <module name="Amqp-Client" />
         <module name="Consumer" />
         <module name="Producer" />
         <module name="RedisMQ" />
         <module name="Apache-Kafka" />
-        <module name="RabbitMQ-RPC" />
-        <module name="Apache-Kafka-Client" />
-        <module name="ActiveMQ" />
         <module name="Spring-AMQP-Producer" />
         <module name="Spring-AMQP-Consumer" />
-        <module name="Spring-AMQP" />
       </profile>
     </annotationProcessing>
   </component>
@@ -32,6 +34,7 @@
       <module name="Spring-AMQP" options="-parameters" />
       <module name="Spring-AMQP-Consumer" options="-parameters" />
       <module name="Spring-AMQP-Producer" options="-parameters" />
+      <module name="SpringKafkaProducer" options="-parameters" />
     </option>
   </component>
 </project>

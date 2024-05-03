@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
         <groupId>org.khasanof</groupId>
-        <artifactId>MessageQueue</artifactId>
+        <artifactId>Spring-Kafka</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <artifactId>Apache-Kafka-Client</artifactId>
+    <artifactId>SpringKafkaCore</artifactId>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,9 +19,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.kafka</groupId>
-            <artifactId>kafka-clients</artifactId>
-            <version>3.7.0</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.30</version>
         </dependency>
     </dependencies>
 
