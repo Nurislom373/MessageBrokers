@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: SpringKafkaConsumer
+org:
+  khasanof:
+    kafka:
+      bootstrap-servers: localhost:9092
+      group-id: k.group
+      auto-offset-reset: earliest

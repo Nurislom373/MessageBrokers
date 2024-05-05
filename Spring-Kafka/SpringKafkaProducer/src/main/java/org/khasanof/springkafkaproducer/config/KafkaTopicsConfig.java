@@ -4,6 +4,8 @@ import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
+import static org.khasanof.KafkaConstants.DEFAULT_TOPIC;
+
 /**
  * @author Nurislom
  * @see org.khasanof.springkafkaproducer.config
@@ -11,8 +13,6 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 public class KafkaTopicsConfig {
-
-    public static final String DEFAULT_TOPIC = "k.queue";
 
     @Bean
     NewTopic newTopic() {

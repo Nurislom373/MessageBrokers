@@ -17,6 +17,7 @@
         <option value="$PROJECT_DIR$/Spring-AMQP/Spring-AMQP-Producer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-AMQP/Spring-AMQP-Consumer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-Kafka/SpringKafkaProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-Kafka/SpringKafkaConsumer/pom.xml" />
       </list>
     </option>
   </component>
