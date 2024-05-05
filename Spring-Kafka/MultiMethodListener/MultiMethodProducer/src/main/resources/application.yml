@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: MultiMethodProducer
+org:
+  khasanof:
+    kafka:
+      bootstrap-servers: localhost:9092
