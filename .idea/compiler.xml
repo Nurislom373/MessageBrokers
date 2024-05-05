@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ConfiguringTopics" />
         <module name="MultiMethodConsumer" />
         <module name="SpringKafkaCore" />
         <module name="RabbitMQ-RPC" />
@@ -31,6 +32,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ActiveMQ" options="-parameters" />
       <module name="Apache-Kafka" options="-parameters" />
+      <module name="ConfiguringTopics" options="-parameters" />
       <module name="Consumer" options="-parameters" />
       <module name="MultiMethodConsumer" options="-parameters" />
       <module name="MultiMethodProducer" options="-parameters" />

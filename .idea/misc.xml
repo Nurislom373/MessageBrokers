@@ -20,6 +20,7 @@
         <option value="$PROJECT_DIR$/Spring-Kafka/SpringKafkaConsumer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-Kafka/MultiMethodListener/MultiMethodConsumer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-Kafka/MultiMethodListener/MultiMethodProducer/pom.xml" />
+        <option value="$PROJECT_DIR$/Spring-Kafka/ConfiguringTopics/pom.xml" />
       </list>
     </option>
   </component>
