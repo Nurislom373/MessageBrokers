@@ -3,6 +3,7 @@ package org.khasanof.springkafkaproducer;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -20,7 +21,7 @@ public class KafkaSendMessageController {
         this.kafkaSendMessage = kafkaSendMessage;
     }
 
-    @RequestMapping(value = "/message/{message}")
+    @RequestMapping(value = "/message/{message}", method = RequestMethod.GET)
     public ResponseEntity<Void> sendMessage(@PathVariable String message) {
         kafkaSendMessage.send(message);
         return ResponseEntity.ok()

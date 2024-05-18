@@ -17,6 +17,7 @@
         <module name="SpringKafkaConsumer" />
         <module name="Spring-AMQP" />
         <module name="SpringKafkaProducer" />
+        <module name="SendingMessages" />
         <module name="Amqp-Client" />
         <module name="Consumer" />
         <module name="Producer" />
@@ -32,13 +33,14 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="ActiveMQ" options="-parameters" />
       <module name="Apache-Kafka" options="-parameters" />
-      <module name="ConfiguringTopics" options="-parameters" />
+      <module name="ConfiguringTopics" options="" />
       <module name="Consumer" options="-parameters" />
       <module name="MultiMethodConsumer" options="-parameters" />
       <module name="MultiMethodProducer" options="-parameters" />
       <module name="Producer" options="-parameters" />
       <module name="RabbitMQ-RPC" options="-parameters" />
       <module name="RedisMQ" options="-parameters" />
+      <module name="SendingMessages" options="-parameters" />
       <module name="Spring-AMQP" options="-parameters" />
       <module name="Spring-AMQP-Consumer" options="-parameters" />
       <module name="Spring-AMQP-Producer" options="-parameters" />

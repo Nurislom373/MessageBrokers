@@ -1,5 +1,6 @@
 package org.khasanof.consumer;
 
+import org.apache.kafka.clients.admin.NewTopic;
 import org.apache.kafka.clients.consumer.ConsumerConfig;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.khasanof.Notification;
@@ -7,8 +8,12 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory;
+import org.springframework.kafka.config.TopicBuilder;
 import org.springframework.kafka.core.ConsumerFactory;
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.kafka.support.SimpleKafkaHeaderMapper;
+import org.springframework.kafka.support.converter.MessagingMessageConverter;
 import org.springframework.kafka.support.serializer.JsonDeserializer;
 
 import java.util.HashMap;
@@ -64,9 +69,25 @@ public class KafkaConsumerConfig {
      * @return
      */
     @Bean
-    public ConcurrentKafkaListenerContainerFactory<String, Notification> notificationListenerContainerFactory() {
+    public ConcurrentKafkaListenerContainerFactory<String, Notification> notificationListenerContainerFactory(KafkaTemplate<String, Object> kafkaTemplate) {
         ConcurrentKafkaListenerContainerFactory<String, Notification> factory = new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(consumerFactory());
+        factory.setReplyTemplate(kafkaTemplate);
         return factory;
     }
+
+    @Bean
+    public NewTopic kRequests() {
+        return TopicBuilder.name("kRequests")
+                .partitions(10)
+                .replicas(2)
+                .build();
+    }
+
+//    @Bean // not required if Jackson is on the classpath
+//    public MessagingMessageConverter simpleMapperConverter() {
+//        MessagingMessageConverter messagingMessageConverter = new MessagingMessageConverter();
+//        messagingMessageConverter.setHeaderMapper(new SimpleKafkaHeaderMapper());
+//        return messagingMessageConverter;
+//    }
 }
