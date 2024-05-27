@@ -12,6 +12,7 @@
         <module>Apache-Kafka-Client</module>
         <module>Spring-Kafka</module>
         <module>Spring-Kafka/MultiMethodListener</module>
+        <module>KafkaStream/JavaKafkaStream</module>
     </modules>
 
     <properties>
