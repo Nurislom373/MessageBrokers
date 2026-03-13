@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: TTL-DLQ
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest

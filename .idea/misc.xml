@@ -22,6 +22,7 @@
         <option value="$PROJECT_DIR$/Spring-Kafka/MultiMethodListener/MultiMethodProducer/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-Kafka/ConfiguringTopics/pom.xml" />
         <option value="$PROJECT_DIR$/Spring-Kafka/SendingMessages/pom.xml" />
+        <option value="$PROJECT_DIR$/TTL_DLQ/pom.xml" />
       </list>
     </option>
   </component>

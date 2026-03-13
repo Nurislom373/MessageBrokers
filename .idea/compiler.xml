@@ -28,6 +28,16 @@
         <module name="Spring-AMQP-Producer" />
         <module name="Spring-AMQP-Consumer" />
       </profile>
+      <profile name="Annotation profile for TTL_DLQ" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-configuration-processor/3.5.11/spring-boot-configuration-processor-3.5.11.jar" />
+          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.42/lombok-1.18.42.jar" />
+        </processorPath>
+        <module name="TTL_DLQ" />
+      </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
@@ -47,6 +57,7 @@
       <module name="Spring-AMQP-Producer" options="-parameters" />
       <module name="SpringKafkaConsumer" options="-parameters" />
       <module name="SpringKafkaProducer" options="-parameters" />
+      <module name="TTL_DLQ" options="-parameters" />
     </option>
   </component>
 </project>

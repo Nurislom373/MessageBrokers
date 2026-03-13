@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/KafkaStream/KafkaStream.iml" filepath="$PROJECT_DIR$/KafkaStream/KafkaStream.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TTL_DLQ/TTL_DLQ.iml" filepath="$PROJECT_DIR$/TTL_DLQ/TTL_DLQ.iml" />
     </modules>
   </component>
 </project>
